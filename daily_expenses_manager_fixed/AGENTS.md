@@ -22,7 +22,7 @@ This is the canonical project structure. Start with task-relevant files below. O
 - `src/index.css` - Global CSS entrypoint and Tailwind CSS v4 import
 - `index.html` - Vite HTML shell containing the `#root` element and loading `src/main.tsx`
 - `package.json` - Project dependencies and the Vite build, development, preview, typecheck, and formatting scripts
-- `vite.config.ts` - Vite configuration with React, Tailwind CSS v4, and Figma Make plugins plus the `@` alias for `src`. Production base path is `/daily_expenses_manager/` (GitHub Pages)
+- `vite.config.ts` - Vite configuration with React and Tailwind CSS v4 plugins and the `@` alias for `src`. Base path is `/` unless `VITE_BASE_PATH` is set (GitHub Pages workflow sets it). It does not depend on `.figma/`
 - `.github/workflows/deploy.yml` - GitHub Pages deployment (pnpm install, typecheck, build, publish `dist`)
 - `.mise.toml` - Toolchain versions for Node.js and pnpm
 
